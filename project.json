@@ -43,7 +43,22 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "27236094-de45-4535-95f3-a47702617f29",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TCDemo1.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "d81e5ca8-4ca8-4edf-aed3-a7a2a879bf93",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TCDemo2.xaml"
+      }
+    ],
     "modernBehavior": true,
     "saveToCloud": false
   },
