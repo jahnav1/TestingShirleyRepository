@@ -22,5 +22,5 @@ steps:
          orchestratorConnection: 'MyOrchCon'
          PackagesPath: '$(Build.ArtifactStagingDirectory)/output'
          Createprocess: true
-         folderName: 'Hello'
+         folderName: 'Shared'
          tracelevel: 'verbose'
