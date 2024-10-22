@@ -16,6 +16,7 @@ steps:
        projectJsonPath: '$(Build.SourcesDirectory)/project.json'
        orchestratorConnection: 'MyOrchCon'
        outputPath: '$(Build.ArtifactStagingDirectory)/output'
+       runWorkflowAnalysis: 'true'
        tracelevel: 'verbose'
 - task: UiPathDeploy@4
   inputs:
