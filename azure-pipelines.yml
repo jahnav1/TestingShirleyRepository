@@ -18,6 +18,13 @@ steps:
        outputPath: '$(Build.ArtifactStagingDirectory)/output'
        runWorkflowAnalysis: 'true'
        tracelevel: 'verbose'
+       
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/output'
+    ArtifactName: 'MyTestFeed'
+    publishLocation: 'Container'
 - task: UiPathDeploy@4
   inputs:
          orchestratorConnection: 'MyOrchCon'
