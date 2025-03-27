@@ -14,7 +14,7 @@ steps:
   inputs:
        versionType: 'CurrentVersion'
        projectJsonPath: '$(Build.SourcesDirectory)/project.json'
-       orchestratorConnection: 'MyOrchCon'
+       orchestratorConnection: 'ConnectionToOrch'
        outputPath: '$(Build.ArtifactStagingDirectory)/output'
        runWorkflowAnalysis: 'true'
        tracelevel: 'verbose'
@@ -27,7 +27,7 @@ steps:
     publishLocation: 'Container'
 - task: UiPathDeploy@4
   inputs:
-         orchestratorConnection: 'MyOrchCon'
+         orchestratorConnection: 'ConnectionToOrch'
          PackagesPath: '$(Build.ArtifactStagingDirectory)/output'
          Createprocess: true
          folderName: 'Shared'
